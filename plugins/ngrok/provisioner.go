@@ -150,5 +150,5 @@ func (f fileProvisioner) Deprovision(ctx context.Context, in sdk.DeprovisionInpu
 }
 
 func (f fileProvisioner) Description() string {
-	return "If ngrok version is 3.2.1 or higher than provision ngrok credentials as environment variables NGROK_AUTH_TOKEN and NGROK_API_KEY otherwise config file aware provisioner. It will first check if an already existing config file is present."
+	return "If ngrok version is 3.2.1 or higher then provision ngrok credentials as the environment variables NGROK_AUTH_TOKEN and NGROK_API_KEY, otherwise use config file aware provisioner. It will first check if an already existing config file is present."
 }
